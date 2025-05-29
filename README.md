@@ -25,23 +25,23 @@ Perform a full port scan and service enumeration of the Metasploitable2 virtual 
   nmap -sn 192.168.1.0/24
 
   # 2. TCP SYN scan
-  nmap -sS 192.168.1.101
+  nmap -sS 192.168.1.20
 
   # 3. Version detection
-  nmap -sV 192.168.1.101
+  nmap -sV 192.168.1.20
 
   # 4. OS detection
-  nmap -O 192.168.1.101
+  nmap -O 192.168.1.20
 
   # 5. Aggressive scan
-  nmap -A 192.168.1.101
+  nmap -A 192.168.1.20
 
   # 6. Vuln script scan
-  nmap --script vuln 192.168.1.101
+  nmap --script vuln 192.168.1.20
 
   # 7. Full port scan (TCP and UDP)
-  nmap -p- -sS -sV 192.168.1.101
-  nmap -sU -T4 -F 192.168.1.101
+  nmap -p- -sS -sV 192.168.1.20
+  nmap -sU -T4 -F 192.168.1.20
   ```
 
 ---
@@ -78,8 +78,15 @@ Perform a full port scan and service enumeration of the Metasploitable2 virtual 
 
 ## 📁 Files in This Repo
 
-- `nmap_full.txt`: Full scan results
 - `README.md`: Project summary
+- `ping-sweep.txt`: A basic sweep to check which hosts are online.
+- `syn-scan.txt`: A SYN scan to identify open ports on the target system.
+- `version-detection.txt`: A version detection scan to identify the services and versions running on open ports.
+- `os-detection.txt`:  An OS detection scan to determine the operating system of the target machine.
+- `aggressive-scan.txt`: A combination of multiple scans (including OS, version, and script scanning) to perform a more detailed security analysis.
+- `vuln-scan.txt`: Scan for potential vulnerabilities using Nmap’s NSE (Nmap Scripting Engine).
+- `full-tcp-scan.txt`:  A detailed scan of all TCP ports.
+- `udp-scan.txt`: A scan of UDP ports to identify open services over UDP.
 
 ---
 
@@ -92,9 +99,3 @@ Perform a full port scan and service enumeration of the Metasploitable2 virtual 
 
 ---
 
-## 🚀 Next Steps
-
-- Enumerate SMB shares with `smbclient`  
-- Connect to services and test credentials (FTP, Telnet)  
-- Capture traffic with Wireshark  
-- Move on to exploitation phase
