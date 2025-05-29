@@ -19,7 +19,7 @@ Perform a full port scan and service enumeration of the Metasploitable2 virtual 
 ## 🧰 Tools Used
 
 - **Nmap v7.95**  
-  Full command:
+  commands:
   ```bash
   nmap -sS -sV -O -p- -T4 -A 192.168.1.20 -oN nmap_full.txt
   ```
