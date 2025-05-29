@@ -1,0 +1,32 @@
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-05-28 22:03 EDT
+Warning: 192.168.1.20 giving up on port because retransmission cap hit (6).
+Nmap scan report for 192.168.1.20
+Host is up (0.00080s latency).
+Not shown: 77 closed udp ports (port-unreach)
+PORT      STATE         SERVICE
+53/udp    open          domain
+68/udp    open|filtered dhcpc
+69/udp    open|filtered tftp
+111/udp   open          rpcbind
+137/udp   open          netbios-ns
+138/udp   open|filtered netbios-dgm
+158/udp   open|filtered pcmail-srv
+162/udp   open|filtered snmptrap
+500/udp   open|filtered isakmp
+998/udp   open|filtered puparp
+1023/udp  open|filtered unknown
+1025/udp  open|filtered blackjack
+1646/udp  open|filtered radacct
+1718/udp  open|filtered h225gatedisc
+1719/udp  open|filtered h323gatestat
+2000/udp  open|filtered cisco-sccp
+2049/udp  open          nfs
+3456/udp  open|filtered IISrpc-or-vat
+5353/udp  open|filtered zeroconf
+33281/udp open|filtered unknown
+49181/udp open|filtered unknown
+49182/udp open|filtered unknown
+49201/udp open|filtered unknown
+MAC Address: 08:00:27:77:92:92 (PCS Systemtechnik/Oracle VirtualBox virtual NIC)
+
+Nmap done: 1 IP address (1 host up) scanned in 97.44 seconds
