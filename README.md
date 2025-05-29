@@ -11,7 +11,7 @@ Perform a full port scan and service enumeration of the Metasploitable2 virtual 
 
 - **Attacker Machine**: Kali Linux (VirtualBox)
 - **Target Machine**: Metasploitable2 (VirtualBox)
-- **Network Mode**: Host-Only Adapter
+- **Network Mode**: Internal Network Adapter
 - **Target IP**: `192.168.1.20`
 
 ---
