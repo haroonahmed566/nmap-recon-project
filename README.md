@@ -95,7 +95,7 @@ Perform a full port scan and service enumeration of the Metasploitable2 virtual 
 - How to perform OS and version detection using Nmap  
 - How to identify vulnerable services  
 - How to correlate recon data with real-world frameworks (MITRE ATT&CK)  
-- How to document findings in a structured, job-ready format  
+- How to document findings in a structured format  
 
 ---
 
