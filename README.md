@@ -21,7 +21,27 @@ Perform a full port scan and service enumeration of the Metasploitable2 virtual 
 - **Nmap v7.95**  
   commands:
   ```bash
-  nmap -sS -sV -O -p- -T4 -A 192.168.1.20 -oN nmap_full.txt
+  # 1. Ping sweep
+  nmap -sn 192.168.1.0/24
+
+  # 2. TCP SYN scan
+  nmap -sS 192.168.1.101
+
+  # 3. Version detection
+  nmap -sV 192.168.1.101
+
+  # 4. OS detection
+  nmap -O 192.168.1.101
+
+  # 5. Aggressive scan
+  nmap -A 192.168.1.101
+
+  # 6. Vuln script scan
+  nmap --script vuln 192.168.1.101
+
+  # 7. Full port scan (TCP and UDP)
+  nmap -p- -sS -sV 192.168.1.101
+  nmap -sU -T4 -F 192.168.1.101
   ```
 
 ---
